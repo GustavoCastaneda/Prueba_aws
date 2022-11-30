@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^4.0.3",
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
+    "aws-amplify": "^5.0.4",
     "heroicons": "^2.0.13",
     "next": "13.0.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.3",
+    "react-simplemde-editor": "^5.2.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
