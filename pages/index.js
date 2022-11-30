@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header'
 
 
 export default function Home() {
@@ -11,9 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>
-        hola mnundo
-      </h1>
+      <header className='bg-gradient-to-t to-blue-100 via-blue-200 from-blue-500'>
+          <Header />
+      </header>    
     </div>
   )
 }
