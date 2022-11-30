@@ -127,14 +127,14 @@ const solutions = [
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex items-center justify-between  py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/">
+              <Link href="/">
                 <span className="sr-only"></span>
                   <Image
                     className=" w-100 sm:h-12 w-48"
                     src={Logo}
                     alt="Colibri Logo"
                   />
-              </a>
+              </Link>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
               <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -176,7 +176,7 @@ const solutions = [
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             {solutions.map((item) => (
-                              <a
+                              <Link
                                 key={item.name}
                                 href={item.href}
                                 className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
@@ -186,19 +186,19 @@ const solutions = [
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                                 </div>
-                              </a>
+                              </Link>
                             ))}
                           </div>
                           <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                             {callsToAction.map((item) => (
                               <div key={item.name} className="flow-root">
-                                <a
+                                <Link
                                   href={item.href}
                                   className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                                 >
                                   <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
                                   <span className="ml-3">{item.name}</span>
-                                </a>
+                                </Link>
                               </div>
                             ))}
                           </div>
@@ -242,7 +242,7 @@ const solutions = [
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             {services.map((item) => (
-                              <a
+                              <Link
                                 key={item.name}
                                 href={item.href}
                                 className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
@@ -252,19 +252,19 @@ const solutions = [
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                                 </div>
-                              </a>
+                              </Link>
                             ))}
                           </div>
                           <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                             {callsToAction.map((item) => (
                               <div key={item.name} className="flow-root">
-                                <a
+                                <Link
                                   href={item.href}
                                   className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                                 >
                                   <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
                                   <span className="ml-3">{item.name}</span>
-                                </a>
+                                </Link>
                               </div>
                             ))}
                           </div>
@@ -277,9 +277,9 @@ const solutions = [
               
   
               
-              <a href="#" className="text-lg font-medium text-gray-900 hover:text-gray-700">
+              <Link href="#" className="text-lg font-medium text-gray-900 hover:text-gray-700">
                 Carrers
-              </a>
+              </Link>
   
                               
   
@@ -316,7 +316,7 @@ const solutions = [
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             {resources.map((item) => (
-                              <a
+                              <Link
                                 key={item.name}
                                 href={item.href}
                                 className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
@@ -326,7 +326,7 @@ const solutions = [
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                                 </div>
-                              </a>
+                              </Link>
                             ))}
                           </div>
                           <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
@@ -335,18 +335,18 @@ const solutions = [
                               <ul role="list" className="mt-4 space-y-4">
                                 {recentPosts.map((post) => (
                                   <li key={post.id} className="truncate text-base">
-                                    <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
+                                    <Link href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
                                       {post.name}
-                                    </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
                             </div>
                             <div className="mt-5 text-sm">
-                              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                              <Link href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
                                 View all posts
                                 <span aria-hidden="true"> &rarr;</span>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -363,15 +363,15 @@ const solutions = [
   
   
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-              <a href="#" className="whitespace-nowrap text-base font-medium text-gray-900 hover:text-gray-900">
+              <Link href="#" className="whitespace-nowrap text-base font-medium text-gray-900 hover:text-gray-900">
                 About us
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -390,7 +390,7 @@ const solutions = [
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <img
+                    <Image
                       className="h-8 w-auto"
                       src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                       alt="Your Company"
@@ -406,49 +406,49 @@ const solutions = [
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
                     {services.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                       >
                         <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
                         <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                      </a>
+                      </Link>
                     ))}
                   </nav>
                 </div>
               </div>
               <div className="space-y-6 py-6 px-5">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                     Pricing
-                  </a>
+                  </Link>
   
-                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                     Docs
-                  </a>
+                  </Link>
                   {resources.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="text-base font-medium text-gray-900 hover:text-gray-700"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div>
-                  <a
+                  <Link
                     href="#"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                   >
                     Contact
-                  </a>
+                  </Link>
                   <p className="mt-6 text-center text-base font-medium text-gray-500">
                     Existing customer?{' '}
-                    <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                    <Link href="#" className="text-indigo-600 hover:text-indigo-500">
                       About us
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
